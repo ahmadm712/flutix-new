@@ -17,7 +17,7 @@ class _SignInPageState extends State<SignInPage> {
   Widget build(BuildContext context) {
     context
         .bloc<ThemeBloc>()
-        .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor1)));
+        .add(ChangeTheme(ThemeData().copyWith(primaryColor: accentColor2)));
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -27,7 +27,7 @@ class _SignInPageState extends State<SignInPage> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+            children: <Widget>[
               SizedBox(
                 height: 30,
               ),
